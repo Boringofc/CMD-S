@@ -334,8 +334,8 @@ local cmdlp = cmdp.LocalPlayer
 for i,v in pairs(cg:GetChildren()) do
 	if v:IsA("Sound") and v.Volume == 2 and v.Name:sub(16, 16) == "4" then
 		v:Destroy()
-		Stand("Looks like Infinite Yield has something to say.","We have no problem with you using both products","", "We have deleted their text-to-speech message for your convenience","We don't know where such a message is coming from. Please don't show any disrespect to ZWolf or Edge, they had nothing to do with it to my knowledge. -fini","Continue", true)
-		while not RunDude do wait() end
+		Stand("Look
+		while not RunDude do wait() ends like Infinite Yield has something to say.","We have no problem with you using both products","", "We have deleted their text-to-speech message for your convenience","We don't know where such a message is coming from. Please don't show any disrespect to ZWolf or Edge, they had nothing to do with it to my knowledge. -fini","Continue", true)
 	end
 end
 local mt = getrawmetatable(game:GetService("CoreGui"))
@@ -350,14 +350,14 @@ mt.__namecall = newcclosure(function(self, ...)
 end)
 setreadonly(mt, true)--]]
 
-Stand("CMD-X V2 is in development.", "Please join the discord for development updates.", "You can get the discord invite by using the .discord command.", "", "", "Continue", true)
+Stand("CMD-S 0.0.1 PRE-ALPHA is in development.", "Please join the discord for development updates.", "You can get the discord invite by using the .discord command.", "", "", "Continue", true)
 while not RunDude do wait() end
 
 wait(.5)
 
-loadstring(game:HttpGet("https://raw.githubusercontent.com/devk94/CMD-S/main/VERSION",true))()
+loadstring(game:HttpGet("https://github.com/Boringofc/CMD-S/blob/main/VERSION",true))()
 if Current and Current.Version ~= ver then
-	Stand("CMD-X is not up to par!","CMD-X cannot run.","","Your version: "..ver,"Current version: "..Current.Version,"Run Anyway",true)
+	Stand("CMD-S is not up to par!","CMD-X cannot run.","","Your version: "..ver,"Current version: "..Current.Version,"Run Anyway",true)
 	while not RunDude do
 		wait()
 	end
@@ -399,7 +399,7 @@ local Mouses = cmdlp:GetMouse()
 cmdm = Mouses
 
 local Devs = {
-	[1380979171] = "Owner", -- ReaperSub
+	[1380979171] = "Owner", -- BoringSpecter
 	[23899181] = "Owner", -- Pigeon
 	[142804804] = "Dev", -- Adam
 }
@@ -821,7 +821,7 @@ if AntiCheat.HideParentInExploit then
 		getParet = get_hidden_gui
 		Unnamed.Parent = get_hidden_gui()
 	else
-		Stand("Your exploit does not support syn.protect_gui/get_hidden_gui!","CMD-X cannot run.","Explanation;","This game has an anti-cheat and our way of stopping it is through syn.protect_gui/get_hidden_gui.","","Run Anyway",true)
+		Stand("Your exploit does not support syn.protect_gui/get_hidden_gui!","CMD-S cannot run.","Explanation;","This game has an anti-cheat and our way of stopping it is through syn.protect_gui/get_hidden_gui.","","Run Anyway",true)
 		repeat wait() until RunDude == true
 	end
 end
@@ -844,7 +844,7 @@ if AntiCheat.RemoveScripts then
 			v:Destroy()
 		end
 	end
-	Stand("CMD-X has to delete local scripts!","Your game may not work.","Explanation;","This game has an anticheat and our way of solving it is removing scripts.","","Run Anyway",true)
+	Stand("CMD-S has to delete local scripts!","Your game may not work.","Explanation;","This game has an anticheat and our way of solving it is removing scripts.","","Run Anyway",true)
 	repeat wait() until RunDude == true
 end
 
