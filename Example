@@ -1,0 +1,23 @@
+local Window = OrionLib:MakeWindow({Name = "Example", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+
+local Tab = Window:MakeTab({
+	Name = "Example",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+Tab:AddButton({
+	Name = "Example breh",
+	Callback = function()
+      		print("button pressed")
+  	end    
+})
+
+OrionLib:MakeNotification({
+	Name = "Wsp ig",
+	Content = "just a example pookie!",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
+
+OrionLib:Init()
